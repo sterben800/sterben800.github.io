@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="Sterben&#39;s Blog">
 <meta property="og:description" content="git使用手册平台安装： windows10:从Git官网上直接下载安装程序，按照默认选项安装。在命令行输入: git 可以查看是否安装好。在命令行输入:12git config --global user.name &quot;your name&quot;git config --global user.email &quot;your email&quot;   然后可以通过git config –list查看user的信息。也可">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-29T11:20:53.355Z">
+<meta property="og:updated_time" content="2019-04-29T11:52:04.366Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git笔记">
 <meta name="twitter:description" content="git使用手册平台安装： windows10:从Git官网上直接下载安装程序，按照默认选项安装。在命令行输入: git 可以查看是否安装好。在命令行输入:12git config --global user.name &quot;your name&quot;git config --global user.email &quot;your email&quot;   然后可以通过git config –list查看user的信息。也可">
@@ -66,8 +66,15 @@
 </ul>
 <p>然后可以通过<strong>git config –list</strong>查看user的信息。也可以通过<strong>git config user.name|user.email</strong>的方式查看是否完成了配置。</p>
 <ul>
-<li>Linux:由于本机安装的为Ubuntu Linux，可以直接执行<strong>sudo apt-get install git</strong>下载安装git.配置方式同Windows。<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2></li>
+<li>Linux:由于本机安装的为Ubuntu Linux，可以直接执行<strong>sudo apt-get install git</strong>下载安装git.配置方式同Windows.</li>
 </ul>
+<h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><p>1.创建一个版本库，当前目录下会生成一个.git目录。只能跟踪文本文件的改动，比如txt文件，网页，所有的程序代码等，还可以告诉你每一次的改动。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></p>
+<p>2.以创建一个hello.java文件为例，将其添加入仓库<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add hello.java <span class="comment">//可以一次添加多个文件 git add file1.txt file2.txt</span></span><br></pre></td></tr></table></figure></p>
+<p>3.将文件提交到仓库<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">"write a hello.java file"</span> <span class="comment">//-m后面是本次提交的说明信息，方便从历史记录里面查找到改动记录,一次可以提交多个文件</span></span><br></pre></td></tr></table></figure></p>
+<p>4.查看仓库的当前状态<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure></p>
+<p>5.查看历史记录,由最近到最远显示<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure></p>
+<p>6.版本回退，HEAD表示当前版本,HEAD^表示上一个版本,HEAD^^上上一个版本，也可以输入版本号前4位去回退到任意制定的版本.git回退版本的速度非常快，因为在内部有一个指向当前版本的HEAD指针，回退版本的时候仅仅把HEAD指向目的位置<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard HEAD^<span class="comment">//回退到上一个版本 </span></span><br><span class="line">fit reset --hard xxxx<span class="comment">//回退到指定版本</span></span><br></pre></td></tr></table></figure></p>
+<p>如果想恢复到以前的版本号，但是忘记了，可以通过<strong>git reflog</strong>来查看所有的历史记录</p>
 
   </article>
   <footer class="f-cf">
