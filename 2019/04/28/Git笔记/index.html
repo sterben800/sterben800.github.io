@@ -5,17 +5,20 @@
   
   <title>Git笔记 | Sterben&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="git使用手册平台安装： windows10:从Git官网上直接下载安装程序，按照默认选项安装。在命令行输入: git 可以查看是否安装好。在命令行输入:12git config --global user.name &quot;your name&quot;git config --global user.email &quot;your email&quot;   然后可以通过git config –list查看user的信息。也可">
+  <meta name="description" content="git使用手册起源 集中式1.有集中的版本管理服务器2.具备文件版本管理和分支管理能力3.继承效率明显地提高4.客户端必须时刻和服务器相连 分布式1.客户端和服务端都有完整的版本库2.脱离服务段，客户端照样可以管理版本3.查看历史和版本比较等较多的操作，都不需要访问服务器，比集中式vcs更能提高版本管理效率平台安装： windows10:从Git官网上直接下载安装程序，按照默认选项安装。在命令行输">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git笔记">
 <meta property="og:url" content="https://sterben800.github.io/2019/04/28/Git笔记/index.html">
 <meta property="og:site_name" content="Sterben&#39;s Blog">
-<meta property="og:description" content="git使用手册平台安装： windows10:从Git官网上直接下载安装程序，按照默认选项安装。在命令行输入: git 可以查看是否安装好。在命令行输入:12git config --global user.name &quot;your name&quot;git config --global user.email &quot;your email&quot;   然后可以通过git config –list查看user的信息。也可">
+<meta property="og:description" content="git使用手册起源 集中式1.有集中的版本管理服务器2.具备文件版本管理和分支管理能力3.继承效率明显地提高4.客户端必须时刻和服务器相连 分布式1.客户端和服务端都有完整的版本库2.脱离服务段，客户端照样可以管理版本3.查看历史和版本比较等较多的操作，都不需要访问服务器，比集中式vcs更能提高版本管理效率平台安装： windows10:从Git官网上直接下载安装程序，按照默认选项安装。在命令行输">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-29T12:04:05.885Z">
+<meta property="og:image" content="https://sterben800.github.io/public/pictures/1.png">
+<meta property="og:image" content="https://sterben800.github.io/public/pictures/2.png">
+<meta property="og:updated_time" content="2019-05-02T13:28:33.896Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git笔记">
-<meta name="twitter:description" content="git使用手册平台安装： windows10:从Git官网上直接下载安装程序，按照默认选项安装。在命令行输入: git 可以查看是否安装好。在命令行输入:12git config --global user.name &quot;your name&quot;git config --global user.email &quot;your email&quot;   然后可以通过git config –list查看user的信息。也可">
+<meta name="twitter:description" content="git使用手册起源 集中式1.有集中的版本管理服务器2.具备文件版本管理和分支管理能力3.继承效率明显地提高4.客户端必须时刻和服务器相连 分布式1.客户端和服务端都有完整的版本库2.脱离服务段，客户端照样可以管理版本3.查看历史和版本比较等较多的操作，都不需要访问服务器，比集中式vcs更能提高版本管理效率平台安装： windows10:从Git官网上直接下载安装程序，按照默认选项安装。在命令行输">
+<meta name="twitter:image" content="https://sterben800.github.io/public/pictures/1.png">
   
     <link rel="icon" href="/pictures/icon.png">
   
@@ -60,24 +63,31 @@
   <h2 class="title">Git笔记</h2>
   <p class="sub">Apr 28, 2019</p>
   <article class="content">
-    <h1 id="git使用手册"><a href="#git使用手册" class="headerlink" title="git使用手册"></a>git使用手册</h1><h2 id="平台安装："><a href="#平台安装：" class="headerlink" title="平台安装："></a>平台安装：</h2><ul>
+    <h1 id="git使用手册"><a href="#git使用手册" class="headerlink" title="git使用手册"></a>git使用手册</h1><h2 id="起源"><a href="#起源" class="headerlink" title="起源"></a>起源</h2><ul>
+<li>集中式<br>1.有集中的版本管理服务器<br>2.具备文件版本管理和分支管理能力<br>3.继承效率明显地提高<br>4.客户端必须时刻和服务器相连<br><img src="/public/pictures/1.png" alt="cvs"></li>
+<li>分布式<br>1.客户端和服务端都有完整的版本库<br>2.脱离服务段，客户端照样可以管理版本<br>3.查看历史和版本比较等较多的操作，都不需要访问服务器，比集中式vcs更能提高版本管理效率<br><img src="/public/pictures/2.png" alt="分布式"><h2 id="平台安装："><a href="#平台安装：" class="headerlink" title="平台安装："></a>平台安装：</h2></li>
 <li>windows10:从Git官网上直接下载安装程序，按照默认选项安装。在命令行输入: <strong>git</strong> 可以查看是否安装好。在命令行输入:<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"your name"</span></span><br><span class="line">git config --global user.email <span class="string">"your email"</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>然后可以通过<strong>git config –list</strong>查看user的信息。也可以通过<strong>git config user.name|user.email</strong>的方式查看是否完成了配置。</p>
+<p>然后可以通过<strong>git config –list</strong>查看user的信息。也可以通过<strong>git config user.name|user.email</strong>的方式查看是否完成了最小配置。</p>
 <ul>
-<li>Linux:由于本机安装的为Ubuntu Linux，可以直接执行<strong>sudo apt-get install git</strong>下载安装git.配置方式同Windows.</li>
+<li>Linux:由于本机安装的为Ubuntu Linux，可以直接执行<strong>sudo apt-get install git</strong>下载安装git.配置方式同Windows.<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --local    <span class="comment">//只对某个仓库有效</span></span><br><span class="line">git config --global   <span class="comment">//对当前用户的所有仓库有效</span></span><br><span class="line">git config --system   <span class="comment">//对系统所有的登录用户有效</span></span><br><span class="line">git config --list --local|global|system <span class="comment">//显示config的配置</span></span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><p>1.创建一个版本库，当前目录下会生成一个.git目录。只能跟踪文本文件的改动，比如txt文件，网页，所有的程序代码等，还可以告诉你每一次的改动。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></p>
+<h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><p>工作区：在电脑里面能够看到的目录,就是工作区<br>版本库：工作区里面有一个隐藏目录.git,是Git的版本库</p>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><p>1.创建一个版本库，当前目录下会生成一个.git目录。只能跟踪文本文件的改动，比如txt文件，网页，所有的程序代码等，还可以告诉你每一次的改动。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将已有项目的代码纳入git管理</span></span><br><span class="line">cd 项目代码所在的文件夹</span><br><span class="line">git init </span><br><span class="line"><span class="comment">//新建项目直接使用git管理</span></span><br><span class="line">cd 某个文件夹</span><br><span class="line">git init your_project #会在当前路径下创建和项目名称相同的文件夹</span><br><span class="line">cd your_project</span><br></pre></td></tr></table></figure></p>
 <p>2.以创建一个hello.java文件为例，将其添加入仓库<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add hello.java <span class="comment">//可以一次添加多个文件 git add file1.txt file2.txt</span></span><br></pre></td></tr></table></figure></p>
 <p>3.将文件提交到仓库<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">"write a hello.java file"</span> <span class="comment">//-m后面是本次提交的说明信息，方便从历史记录里面查找到改动记录,一次可以提交多个文件</span></span><br></pre></td></tr></table></figure></p>
 <p>4.查看仓库的当前状态<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure></p>
-<p>5.查看历史记录,由最近到最远显示<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure></p>
+<p>5.查看历史记录,由最近到最远显示<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git log </span><br><span class="line">git log --oneline <span class="comment">//查看单行的简洁历史</span></span><br><span class="line">git log -n4 oneline<span class="comment">//查看最近4条</span></span><br><span class="line">git branch -v<span class="comment">//查看所有的分支</span></span><br><span class="line">git log --all --graph<span class="comment">//查看图形化的log地址</span></span><br></pre></td></tr></table></figure></p>
 <p>6.版本回退，HEAD表示当前版本,HEAD^表示上一个版本,HEAD^^上上一个版本，也可以输入版本号前4位去回退到任意制定的版本.git回退版本的速度非常快，因为在内部有一个指向当前版本的HEAD指针，回退版本的时候仅仅把HEAD指向目的位置<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard HEAD^<span class="comment">//回退到上一个版本 </span></span><br><span class="line">fit reset --hard xxxx<span class="comment">//回退到指定版本</span></span><br></pre></td></tr></table></figure></p>
-<p>如果想恢复到以前的版本号，但是忘记了，可以通过<strong>git reflog</strong>来查看所有的历史记录</p>
+<p>如果想恢复到以前的版本号，但是忘记了，可以通过<strong>git reflog</strong>来查看所有的历史记录<br>7.变更文件名<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git mv oldname newname</span><br></pre></td></tr></table></figure></p>
+<p>8.网页上查看帮助<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git help --web log</span><br></pre></td></tr></table></figure></p>
 
   </article>
   <footer class="f-cf">
+    
+      <a href="/2019/04/30/Linux下intellij-Idea使用/" class="link f-fl">⟵Linux下intellij Idea使用</a>
     
     
   </footer>

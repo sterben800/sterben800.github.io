@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>Linux下intellij Idea使用 | Sterben&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="安装刚开始安装的为社区免费版，发现功能被精简了，所以安装了专用版，免费使用30天。安装平台为Linux 配置tomcat去官网上下载tomcat9.0，解压，在终端进入tomcat的bin文件夹运行startup.sh,运行tomcat,在浏览器地址栏中输入localhost:8080查看是否出现tomcat页面，如果出现了tomcat表示安装启动成功，然后运行shutdown.sh关闭tomca">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux下intellij Idea使用">
+<meta property="og:url" content="https://sterben800.github.io/2019/04/30/Linux下intellij-Idea使用/index.html">
+<meta property="og:site_name" content="Sterben&#39;s Blog">
+<meta property="og:description" content="安装刚开始安装的为社区免费版，发现功能被精简了，所以安装了专用版，免费使用30天。安装平台为Linux 配置tomcat去官网上下载tomcat9.0，解压，在终端进入tomcat的bin文件夹运行startup.sh,运行tomcat,在浏览器地址栏中输入localhost:8080查看是否出现tomcat页面，如果出现了tomcat表示安装启动成功，然后运行shutdown.sh关闭tomca">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-06-03T13:45:18.435Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Linux下intellij Idea使用">
+<meta name="twitter:description" content="安装刚开始安装的为社区免费版，发现功能被精简了，所以安装了专用版，免费使用30天。安装平台为Linux 配置tomcat去官网上下载tomcat9.0，解压，在终端进入tomcat的bin文件夹运行startup.sh,运行tomcat,在浏览器地址栏中输入localhost:8080查看是否出现tomcat页面，如果出现了tomcat表示安装启动成功，然后运行shutdown.sh关闭tomca">
+  
+    <link rel="icon" href="/pictures/icon.png">
+  
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+</html>
+<body style="
+
+
+  background-color: #eff0f6
+
+">
+  <div id="container">
+    <nav id="nav">
+  <header class="header">
+    <a href="/" class="title">Sterben&#39;s Blog</a>
+  </header>
+  <div class="ctnWrap">
+    <div class="icons">
+      
+    </div>
+    <div class="menu">
+      
+        
+            <a href="/" class="nav-menu ">HOME</a>
+          
+        
+            <a href="/categories" class="nav-menu ">CATEGORIES</a>
+          
+        
+            <a href="/archives" class="nav-menu ">ARCHIVE</a>
+          
+        
+            <a href="/about" class="nav-menu ">ABOUT</a>
+          
+        
+      
+    </div>
+  </div>
+</nav>
+    <div id="main"><section class="article">
+  <h2 class="title">Linux下intellij Idea使用</h2>
+  <p class="sub">Apr 30, 2019</p>
+  <article class="content">
+    <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>刚开始安装的为社区免费版，发现功能被精简了，所以安装了专用版，免费使用30天。安装平台为Linux</p>
+<h2 id="配置tomcat"><a href="#配置tomcat" class="headerlink" title="配置tomcat"></a>配置tomcat</h2><p>去官网上下载tomcat9.0，解压，在终端进入tomcat的bin文件夹运行startup.sh,运行tomcat,在浏览器地址栏中输入localhost:8080查看是否出现tomcat页面，如果出现了tomcat表示安装启动成功，然后运行shutdown.sh关闭tomcat<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">./startup.sh</span><br><span class="line">./shutdown.sh</span><br></pre></td></tr></table></figure></p>
+<p>参考<a href="https://www.cnblogs.com/shindo/p/7272646.html运行intellij" target="_blank" rel="noopener">https://www.cnblogs.com/shindo/p/7272646.html运行intellij</a> Idea,新建Java web项目，配置tomcat。</p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>1.刚开始的时候一直报404的错误，无法找到页面，后来发现是配置的时候有一个警告：No artifacts marked for deployment没有解决。将deploment选项的tomcatwar里面的Appplocation context改为<strong>/</strong>,这样访问地址就是<a href="http://localhost:8080/+相关页面" target="_blank" rel="noopener">http://localhost:8080/+相关页面</a><br>2.8080端口号占用问题：<br>使用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ps -ef|grep tomcat //查看有没有tomcat进程</span><br><span class="line">kill xxxx//xxxx是进程的pid,杀死进程</span><br><span class="line">netstat -an|grep 8080//查看占用8080端口的进程</span><br></pre></td></tr></table></figure></p>
+
+  </article>
+  <footer class="f-cf">
+    
+      <a href="/2019/05/21/MySQL基础知识/" class="link f-fl">⟵MySQL基础知识</a>
+    
+    
+      <a href="/2019/04/28/Git笔记/" class="link f-fr">Git笔记⟶</a>
+    
+  </footer>
+</section></div>
+    <footer id="footer" class="f-cf">
+  <span class="beian">Powered By Hexo</span>
+</footer>
+  </div>
+</body>
+</html>
